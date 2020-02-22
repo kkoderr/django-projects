@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Budget</title>
+    <link href="{% static 'frontend/css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'frontend/css/bootstrap-theme.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'frontend/budget_style.css' %}" rel="stylesheet" type="text/css"/>
+    <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>
+    <div class="container fluid">
+      <div class="col-md-6 mx-auto">
+        <nav class="navbar navbar-expand-lg">
+          <span class="navbar-brand mb-0 h1 ">Budget App</span>
+          <ul>
+            <li>
+              <img src="{static 'frontend/users/'}" alt="disp pic">
+            </li>
+          </ul>
+        </nav>
+
+        <form action="." method="post">
+          <div class="form-group">
+            <label for=""></label>
+            <input class="form-control" type="text" name="" >
+          </div>
+        </form>
+      </div>
+   </div>
+    <!-- <script type="text/javascript">
+
+      fetch('http://127.0.0.1:8000/api/budget/1/')
+      .then((res) => res.json())
+      .then((data) => {
+        const {id, name, budget_amount, duration, archieved} = data;
+
+        const budget_box = document.querySelector('[data-budget-block]');
+
+        budget_box.innerHTML += `
+        <div>Name: ${name}</div>
+        <div>Amount: ${budget_amount}</div>
+        <div>Duration: ${duration}</div>
+        <div>Archieved: ${archieved}</div>
+        `;
+      })
+
+      function addPost(e){
+      e.preventDefault();
+
+      let title = document.getElementById('title').value;
+      let body = document.getElementById('body').value;
+
+      fetch('https://jsonplaceholder.typicode.com/posts', {
+        method:'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-type':'application/json'
+        },
+        body:JSON.stringify({title:title, body:body})
+      })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+     }
+    </script> -->
+  </body>
+</html>

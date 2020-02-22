@@ -1,0 +1,25 @@
+/* .parent_con {
+	background-color: aliceblue;
+	position: relative;
+}
+
+.con {
+	background-color: #fff;
+}
+
+input[type='button'], input[type='submit'] {
+	border-radius: 5px;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.navigation {
+	background-color: rgb(83, 108, 139);
+	margin-left: 0px;
+} */
+
+#container {
+	background-color: red;
+}
